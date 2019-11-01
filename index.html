@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting with JSON | Marco Bruijns</title>
+    <meta name="author" content="Marco Bruijns">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Boeken sorteren v2.</h1>
+<select id="kenmerk">
+    <option value="titelUpper" selected>titel</option>
+    <option value="sortAuteur">auteur(s)</option>
+    <option value="jsDatum">datum uitgave</option>
+    <option value="paginas">aantal bladzijden</option>
+    <option value="taal">taal</option>
+    <option value="prijs">prijs</option>
+</select>
+<label><input type="radio" name="oplopend" value="1">oplopend</label>
+<label><input type="radio" name="oplopend" value="-1">aflopend</label>
+<div id="uitvoer"></div>
+<script src="sorteerBoeken.js"></script>
+</body>
+</html>

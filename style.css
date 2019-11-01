@@ -1,0 +1,61 @@
+body {
+    background-color: #f3f3f3;
+    font-family: sans-serif;
+}
+
+h1  {
+    text-align: center;
+    color: #333;
+}
+
+.boek__cover {
+    max-width: 100px;
+}
+
+.boek__titel {
+    margin: 0;
+}
+
+.boek__main {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: .5em 0;
+}
+
+.boek__overig {
+    margin: 0;
+    font-size: .8em;
+    color: #444;
+}
+
+.boek {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1em;
+    margin-bottom: 1em;
+}
+
+.boek:nth-child(even) {
+    background-color: #eee;
+}
+
+.boek__prijs {
+    font-size: 2em;
+    padding: .5em;
+}
+
+@media screen and (min-width: 60em) {
+    #uitvoer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2em;
+    }
+
+    .boek:nth-child(even) {
+        background-color: inherit;
+    }
+
+    .boek:nth-child(4n+2), .boek:nth-child(4n+3) {
+        background-color: #eee;
+    }
+}
