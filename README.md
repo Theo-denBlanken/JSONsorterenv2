@@ -1,2 +1,2 @@
 # boeken in JSON
-Een oefenbestand om te werken met JSON
+http://25737.hosts2.ma-cloud.nl/bewijzenmap/november/sorterenv2/
